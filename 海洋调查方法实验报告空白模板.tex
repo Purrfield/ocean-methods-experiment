@@ -1,0 +1,766 @@
+\documentclass[UTF8,a4paper,12pt]{ctexart}
+\usepackage{geometry}
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{placeins}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{caption}
+\captionsetup{font=small, labelfont=bf}
+\captionsetup[subfigure]{font=small, labelfont=bf}
+\usepackage{xltabular}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=black,
+  citecolor=black
+}
+
+\graphicspath{{figure/}}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.25em}
+\setlength{\headheight}{15pt}
+\linespread{1.25}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{海洋调查方法实验报告}
+\fancyfoot[C]{\thepage}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\newcommand{\blankline}[2][3cm]{%
+	\underline{\makebox[#1][c]{#2}}%
+}
+\newcommand{\placeholder}[1]{%
+  \begin{center}
+  \fbox{\parbox{0.88\linewidth}{\centering\vspace{1.2cm}#1\vspace{1.2cm}}}
+  \end{center}
+}
+
+\begin{document}
+
+\begin{titlepage}
+\thispagestyle{empty}
+\begin{center}
+  \vspace*{1.2cm}
+  {\zihao{1}\bfseries 海洋调查方法实验报告\par}
+  \vspace{1.4cm}
+    \includegraphics[width=4cm]{guide-000.jpg}\par
+  \vspace{4cm}
+  \renewcommand{\arraystretch}{1.9}
+  \begin{tabular}{>{\raggedleft\arraybackslash}p{3cm}p{8cm}}
+    班\quad 级 & \blankline[7.5cm]{} \\
+    学\quad 号 & \blankline[7.5cm]{} \\
+    姓\quad 名 & \blankline[7.5cm]{} \\
+    教\quad 师 & \blankline[7.5cm]{} \\
+    撰写日期 & \blankline[7.5cm]{} \\
+  \end{tabular}
+
+  \vfill
+  {\zihao{3}浙江大学海洋学院\par}
+  \vspace{0.6cm}
+  {\zihao{3}海洋实验教学中心\par}
+\end{center}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+
+\section{实验目的与安排}
+
+\subsection{实验目的}
+
+\subsubsection{海洋调查实践的意义}
+
+海洋科学是一门实践性很强的学科，从科学角度来看，许多重大发现都是从观测调查中得来的。从现实情况来看，海洋资源与环境、海洋权益、国土安全、减灾防灾等关系到国计民生的大事，又无不与海洋监测密切相连。特别是随着海洋科学的发展，人们越来越意识到以空基、船基、陆基、海床基、自持自航设备等三维立体观测系统进行多学科、多参数高时空分辨率、长时间序列的同步观测为基础，高新技术手段的应用、可靠数据的获取是研究成果融入国际主流、建立世界一流独树一帜的理论学说的前提。中国目前正处于经济快速增长期，海洋事业蒸蒸日上，需要大量全面发展的海洋科技人才，因此培养学生的海上实践能力，意义重大。
+
+\subsubsection{海上调查实践的目的}
+
+海上实践的目的主要是要求学生了解海洋科学研究数据获取、分析的全过程，掌握部分观测仪器的使用要领，通过对海洋现象的感性认识，加深对海洋科学理论的理解，锻炼意志，培养学生认识问题、分析解决问题的能力，为其今后更好地从事海洋研究、海洋管理、环境保护等工作打好基础。近海海洋调查有其自身的特点，比如很少有专用的调查船，往往在研究海域当地租用渔船或其他船只，因此存在着仪器需要临时安装固定，电源不匹配，不能有良好的工作、休息条件等。需要调查的组织者、参与者有很好的动手、动脑以及与人协调的能力，通过本调查实践希望让学生能够对此有所体验。
+
+\subsection{实验安排}
+
+
+\begin{table}[H]
+\centering
+\caption{实验时间与地点记录}
+\begin{tabularx}{\linewidth}{YYYY}
+\toprule
+项目 & {} & 项目 & {} \\
+\midrule
+{} & {} & {} & {} \\
+{} & {} & {} & {} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\noindent\textbf{填写说明：}此处原表格中的个人信息或实测数据已删除，请在 {} 中填写。\par
+
+
+
+\begin{table}[H]
+\centering
+\caption{参与人员记录}
+\begin{tabularx}{\linewidth}{YYYY}
+\toprule
+项目 & {} & 项目 & {} \\
+\midrule
+{} & {} & {} & {} \\
+{} & {} & {} & {} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\noindent\textbf{填写说明：}此处原表格中的个人信息或实测数据已删除，请在 {} 中填写。\par
+
+
+\subsection{预调查站点}
+
+\begin{figure}[H]
+\centering
+\placeholder{此处需插入图片：预调查站点与水深剖面}
+\caption{预调查站点与水深剖面}
+
+\end{figure}
+
+
+\begin{table}[H]
+\centering
+\caption{预设调查站点经纬度和深度}
+\begin{tabularx}{\linewidth}{YYYY}
+\toprule
+项目 & {} & 项目 & {} \\
+\midrule
+{} & {} & {} & {} \\
+{} & {} & {} & {} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\noindent\textbf{填写说明：}此处原表格中的个人信息或实测数据已删除，请在 {} 中填写。\par
+
+
+\section{实验内容与数据}
+
+\subsection{实验一：AUV自主操作实验}
+
+\subsubsection{实验目的}
+掌握无缆水下航行器（AUV）的工作方式、应用领域和设置方法，利用 AUV 进行自主操作实验，获取布放海域相关的海洋水文环境参数。
+
+\subsubsection{实验内容}
+在指定站位下放 AUV，自主操控 AUV 对目标海域进行自主航行观测，记录 AUV 下放经纬度、下放时间、航行轨迹等重要参数，获取航行海域相关水文环境参数。在不同深度层下，对 AUV 进行巡航测试，实现不同精度网格情况下的巡航。
+
+\subsubsection{实验设备}
+HN-660 型便携式 AUV 及配套设备。
+
+\subsubsection{实验步骤}
+\begin{enumerate}[label=（\arabic*）]
+  \item 仪器自检与布放：布放前对 AUV 系统内部电气各个模块进行上电确认及通信测试，确保系统可以正常入水工作。自检尽量在室外 GPS 和 4G 信号良好的环境下试验，包括手机状态检查、平板状态检查和航行器状态检查等。检查结束后，利用绞车、吊机等设备将 AUV 吊放至海面，吊放时注意防止磕碰。
+  \item 水面操作控制：自主航行开始前，进行水面遥控操作，验证系统推进器、舵机、姿态是否正常工作，工作状态是否稳定。
+  \item 自主操控 AUV 完成航行与数据采集：根据调查任务及要求完成 AUV 的任务规划设置，监控 AUV 完成任务。AUV 任务主要包含直航任务和导航任务，学生可根据调查要求进行选择。
+  \item 数据分析与 AUV 回收：将航行任务中记录的相关数据从手机导航端下载到平板操控端，将数据中的 GPS 位置信息显示在地图中。全部任务结束后，将 AUV 遥控至船边并捞起，进行清理冲洗、断电、存储等工作后，将 AUV 妥善收好。
+\end{enumerate}
+\subsubsection{实验数据记录}
+
+\begin{table}[H]
+\centering
+\caption{实验数据记录}
+\begin{tabularx}{\linewidth}{YYYY}
+\toprule
+项目 & {} & 项目 & {} \\
+\midrule
+{} & {} & {} & {} \\
+{} & {} & {} & {} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\noindent\textbf{填写说明：}此处保留表格格式；请在 {} 中填写。\par
+
+\begin{figure}[H]
+\centering
+\placeholder{此处需插入图片：相关实验图件占位}
+\caption{相关实验图件占位}
+
+\end{figure}
+\subsubsection{数据分析结论}
+\noindent\textbf{填写说明：}此处填写实验数据分析、结果解释或讨论内容；。\par
+{}
+\subsection{实验二：湖泊表面光谱测量}
+
+\subsubsection{实验目的}
+掌握湖泊表面光谱测量方法，熟悉高光谱辐射计测量操作和数据处理过程，理解湖泊表面光谱反映的湖泊水体特征，思考湖泊表面光谱测量可能受哪些因素影响。
+
+\subsubsection{实验内容}
+在岸边利用光谱仪分别测量太阳向下辐照度、海水光谱辐亮度、天空光谱辐亮度，利用测量数据计算得到海洋遥感反射率（比）光谱。
+
+\subsubsection{实验设备}
+光谱仪、数据采集终端、GPS、半圆仪、长直尺、测量卷尺、记录本等。
+
+\subsubsection{实验步骤}
+\paragraph{准备工作}
+\begin{enumerate}[label=（\arabic*）]
+  \item 光谱仪电池、数据采集终端充电：光谱仪电池电量不足时红灯闪亮，充满电后绿灯亮；如果黄灯闪亮则说明过热，需要等待一段时间。
+  \item 将光谱仪、电缆、数据采集终端连接后，依次打开光谱仪电源及数据采集终端电源，并启动相应数据采集软件。
+  \item 在软件中选择设置定标文件、数据采集配置、存储路径、测量站位名称等。准备工作连接设置详细操作可参考 RAMSES 辐射计手持机用户手册。
+\end{enumerate}
+
+\paragraph{光谱测量}
+\begin{enumerate}[label=（\arabic*）,resume]
+  \item 辐照度传感器垂直向上，测量获得向下太阳辐照度 \(E_d\)。
+  \item 辐亮度镜头对准天空、水面，测量获得天空光谱辐亮度（\(L_{sky}\)）、水面光谱辐亮度（\(L_u\)）；常用测量几何如下图所示，一般选择 \(\theta_v=40^\circ\)，\(\phi_v=135^\circ\) 或 \(90^\circ\)，方法可参考文献唐军武等（2004）。
+\end{enumerate}
+
+\begin{figure}[H]
+\centering
+\placeholder{此处需插入图片：水面遥感反射率测量几何示意}
+\caption{水面遥感反射率测量几何示意}
+
+\end{figure}
+
+测量时建议每次测量至少不少于 10 个光谱曲线，数据处理筛选平均用；测量时注意检查数据保存文件夹，数据是否正确保存；测量时镜头对的区域尽量避免受到船体/岸/树等的遮蔽阴影或其他强反射体影响。测量人尽量穿着深色衣物，避免反射影响测量效果。
+
+\paragraph{数据处理}
+\begin{enumerate}[label=（\arabic*）,resume]
+  \item 描述实习实验设置方式，记录测量日期、时间、太阳--观测几何、经纬度、天气情况、海面状况，有可能的话记录风速、风向。
+  \item 画出湖泊测量数据的光谱曲线，包括太阳向下辐照度 \(E_d\)、海水光谱辐亮度 \(L_u\)、天空光谱辐亮度 \(L_{sky}\)、以及计算得到的遥感反射率（比）光谱 \(R_{rs}\)。
+\end{enumerate}
+
+\subsubsection{实验数据记录与处理}
+
+\begin{table}[H]
+\centering
+\caption{实验数据记录与处理}
+\begin{tabularx}{\linewidth}{YYYY}
+\toprule
+项目 & {} & 项目 & {} \\
+\midrule
+{} & {} & {} & {} \\
+{} & {} & {} & {} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\noindent\textbf{填写说明：}此处保留表格格式；请在 {} 中填写。\par
+
+\begin{figure}[H]
+\centering
+\placeholder{此处需插入图片：相关实验图件占位}
+\caption{相关实验图件占位}
+
+\end{figure}
+\subsubsection{思考题回答}
+\begin{enumerate}[label=（\arabic*）]
+  \item 画出不同站位地图，分析不同站位湖水光谱特征及其差别。
+  {}
+  \item 思考哪些因素可能会造成湖水表面光谱反射率测量结果的变化，为什么？
+  {}
+  \item 思考海洋遥感中进行光谱反射率测量的意义和用途。
+  {}
+\end{enumerate}
+\subsection{实验三：水质观测}
+
+\subsubsection{实验目的}
+掌握湖水温度、盐度、溶解氧等参数的测量方法和仪器的使用。
+
+\subsubsection{实验内容}
+利用多参数水质仪测量海水温度、盐度、溶解氧等数据。
+
+\subsubsection{实验设备}
+OT-Switch 多参数水质仪。
+
+\subsubsection{实验步骤}
+水质观测：利用多参数水质仪对湖泊的温度、盐度、溶解氧（DO）、叶绿素、pH 和浊度等参数进行剖面观测。
+
+\begin{enumerate}[label=（\arabic*）]
+  \item 首先对多参数水质仪进行设置，因进行剖面观测，因此采样频率宜采用 5Hz 或者 25Hz，具体操作指南见附录 3。
+  \item 仪器设置完毕后，确保仪器正常工作，之后借助绞车等工具将多参数水质仪放至船边，保持匀速缓慢下降，从而获取站位相关参数的剖面数据。
+  \item 下放过程中注意避免触底，避免仪器磕碰船舷。根据剖面数据绘制剖面曲线图、大面站所测水域水质参数空间分布图等，并尝试阐述曲线产生机理。
+\end{enumerate}
+
+\subsubsection{实验数据记录}
+
+\begin{table}[H]
+\centering
+\caption{实验数据记录}
+\begin{tabularx}{\linewidth}{YYYY}
+\toprule
+项目 & {} & 项目 & {} \\
+\midrule
+{} & {} & {} & {} \\
+{} & {} & {} & {} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\noindent\textbf{填写说明：}此处保留表格格式；，请在 {} 中填写。\par
+
+\begin{figure}[H]
+\centering
+\placeholder{此处需插入图片：相关实验图件占位}
+\caption{相关实验图件占位}
+
+\end{figure}
+\subsubsection{数据分析结论}
+\noindent\textbf{填写说明：}此处填写实验数据分析、结果解释或讨论内容。\par
+{}
+\subsection{实验四：海底地貌调查虚拟仿真实验}
+
+\subsubsection{实验目的}
+通过 3D 场景虚拟模拟现实中学生难以亲自操作的场景和调查过程，以虚补实，了解海底地貌调查的基本过程和相应的知识点。
+
+\subsubsection{实验内容}
+在 PC 端登录虚拟实验系统，按照系统指示完成全部学习内容（虚拟实验报告需按照系统格式写好后附在正式报告后）。
+
+\subsection{实验五：海洋牧场低氧灾害调查监测虚拟仿真实验}
+
+\subsubsection{实验目的}
+\begin{enumerate}[label=\arabic*)]
+  \item 了解海洋牧场概念及意义，了解海洋牧场可能发生的低氧或赤潮等海洋灾害及危害。
+  \item 认识并掌握海洋牧场以及海底海洋环境实时监测的相关知识，学习掌握海底有缆观测系统布放、海洋牧场数据采集与维护等现场调查操作步骤，巩固海洋调查知识。
+  \item 对常见的海洋调查仪器进行学习，认识仪器外观并掌握仪器功能，加深理解海底在线观测的优点和难点。
+\end{enumerate}
+
+\subsubsection{实验内容}
+实验包括知识学习、设备展示、设备布放三个模块，其中：
+\begin{enumerate}[label=\arabic*)]
+  \item 知识学习模块对实验背景知识进行学习，对实验内容进行初步了解。
+  \item 设备展示模块对实验中的调查仪器、观测系统进行展示，对设备的组成、功能进行简单介绍。
+  \item 设备布放模块通过以真实的海洋牧场为原型进行实际的海底在线观测系统布放流程仿真模拟学习，利用掌握的知识点进行交互现场观测设计，实现对知识掌握情况自我检测。
+\end{enumerate}
+
+\subsubsection{思考问答题}
+\begin{enumerate}[label=（\arabic*）]
+  \item 海洋牧场概念是什么？
+  {}
+  \item 海洋牧场可以利用海底有缆在线监测系统进行信息化智慧监测，说明该监测系统组成及其可实现的监测参数，思考该系统的优缺点。
+  {}
+  \item 海洋牧场海底有缆在线监测系统的布放过程主要有哪些操作内容？布放完成后如何保障系统长期正常工作？
+  {}
+  \item 对海洋牧场低氧灾害调查监测虚拟仿真实验的意见和建议。
+  {}
+\end{enumerate}
+\subsection{实验六：连续水位与海流观测}
+
+\subsubsection{实验目的}
+掌握基于海床基观测系统的长期连续水位、海流观测方法和仪器的使用。
+
+\subsubsection{实验内容}
+在指定站位布放海床基观测系统，系统搭载潮位计与多普勒声学流速剖面仪，记录布放经纬度、布放时间及仪器设置参数，获取连续时间的水位与海流观测数据，并基于实测数据绘制水流与海流变化折线图。
+
+\subsubsection{实验设备}
+海床基观测系统、UMI-OT 潮位计、诺泰克“阔龙”声学流速剖面仪。
+
+\begin{figure}[H]
+\centering
+\placeholder{此处需插入图片：海床基观测系统示意图}
+\caption{海床基观测系统示意图}
+
+\end{figure}
+
+\subsubsection{实验步骤}
+\begin{enumerate}[label=（\arabic*）]
+  \item 仪器设置：按连续观测要求设置潮位计和声学流速剖面仪，潮位计操作要求与实验三中的多参数水质仪类似，具体操作指南见附录三：《国产多参数操作指南》，声学流速剖面仪操作指南见附录四：《诺泰克“阔龙”操作指南》。
+  \item 系统组装搭建：利用尼龙件、常平架等将潮位计、声学流速剖面仪固定于海床基上，固定仪器时注意不要过松或过紧，尤其注意常平架的安装，组装后的海床基观测系统如图所示。
+  \item 在指定站位区域，利用绞车、吊机等设备布放海床基观测系统，布放区域尽量避开淤泥底质，海底地形平坦，布放过程注意安全，在甲板作业时佩戴安全帽，海况超过 3 级时，不宜开展海床基观测系统布放作业。
+  \item 利用海流计对测试站点进行海流观测，同时掌握海流的定义、观测方法，海流的产生机理、作用和影响，了解观测仪器的测量原理、使用方法，测试并记录实验当天各站点海流的流速和流向，对数据进行描述分析，根据海流计测量结果，绘制不同深度各个站点的流速矢量图，要求图元要素齐全，包括坐标、比例尺等。
+\end{enumerate}
+\begin{figure}[H]
+\centering
+\placeholder{此处需插入图片：5 m 深度示例}
+\caption{5 m 深度示例}
+
+\end{figure}
+
+\subsubsection{实验数据记录}
+
+\begin{table}[H]
+\centering
+\caption{实验数据记录}
+\begin{tabularx}{\linewidth}{YYYY}
+\toprule
+项目 & {} & 项目 & {} \\
+\midrule
+{} & {} & {} & {} \\
+{} & {} & {} & {} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\noindent\textbf{填写说明：}此处保留表格格式；请在 {} 中填写。\par
+
+\begin{figure}[H]
+\centering
+\placeholder{此处需插入图片：相关实验图件占位}
+\caption{相关实验图件占位}
+
+\end{figure}
+\subsubsection{数据分析结论}
+\noindent\textbf{填写说明：}此处填写实验数据分析、结果解释或讨论内容。\par
+{}
+\subsection{实验结果分析小结}
+\noindent\textbf{填写说明：}此处填写实验数据分析、结果解释或讨论内容。\par
+{}
+\subsection{实验七：定位与气象观测}
+
+\subsubsection{实验目的}
+掌握常规数据的定义及观测记录方式、方法。
+
+\subsubsection{实验内容}
+记录实验当天各站点的水深、能见度、风速、风向、大气温度、海况、波型、气压、位置数据，风速风向在相对坐标系和绝对坐标系之间相互转换。
+
+\subsubsection{实验设备}
+船用气象仪、水深探测系统。
+
+\subsubsection{实验步骤}
+\begin{enumerate}[label=（\arabic*）]
+  \item 海上能见度观测：参考水平能见度观测表对海上能见度进行观测及记录，观测有效水平能见度和最小水平能见度。有效水平能见度是指测站四周 1/2 以上的范围所能看到的最大水平距离。最小水平能见度是指测站四周在能见度不一致时所能看到的最小水平距离。能见度以 km 为单位，取小数一位，准确度为 20\%。
+  \item 气象观测：手持风速风向仪。风速以 m/s 为单位，读数分辨至 0.1m/s，风速 \(\leq 5\)m/s，准确度为 \(\pm 0.5\)m/s，\(>5\)m/s 时，准确度为 \(\pm 10\%\)；风向以度为单位，读数分辨率至 \(1^\circ\)，准确度 \(\pm 5^\circ\)，正北为 \(0^\circ\)，顺时针计量，观测应在迎风一侧。气压指海面平均气压，单位为百帕（hPa），分辨率为 0.1hPa，准确度为 \(\pm 1\)hPa。
+  \item 水深海况观测：船舶驾驶室装有水深探测系统，可读取水深数据；目测海浪时，应站在船只迎风面，以离船身 30m（或船长之半）以外的海面作为观测区域（同时还应环视广阔海面）来估计波浪尺寸和判断海浪外貌特征。以目力观测海面征象，根据海面上波峰的形状、峰顶的破碎程度和浪花出现的多少，按海况等级判断海况所属等级，并填入记录表中。
+\end{enumerate}
+
+\begin{table}[H]
+\centering
+\caption{水平能见度等级}
+\begin{tabular}{ccc}
+\toprule
+等级 & 定性描述 & 水平能见度 \\
+\midrule
+1 & 优 & \(V\ge 10\,\mathrm{km}\) \\
+2 & 良 & \(2\,\mathrm{km}\le V<10\,\mathrm{km}\) \\
+3 & 一般 & \(1\,\mathrm{km}\le V<2\,\mathrm{km}\) \\
+4 & 较差 & \(500\,\mathrm{m}\le V<1\,\mathrm{km}\) \\
+5 & 差 & \(50\,\mathrm{m}\le V<500\,\mathrm{m}\) \\
+6 & 极差 & \(V<50\,\mathrm{m}\) \\
+\bottomrule
+\end{tabular}
+\end{table}
+\begin{table}[H]
+	\centering
+	\caption{海况等级}
+	\small
+	\renewcommand{\arraystretch}{1.45}
+	\begin{tabularx}{\linewidth}{|>{\centering\arraybackslash}p{2.2cm}|X|}
+		\hline
+		海况级 & 海面状况 \\
+		\hline
+		0 & 海面光滑如镜 \\
+		\hline
+		1 & 波纹 \\
+		\hline
+		2 & 风浪很小，波峰开始破碎，但浪花不显白色 \\
+		\hline
+		3 & 风浪不大，但很触目，波峰破裂，其中有些地方形成白色浪花 \\
+		\hline
+		4 & 风浪具有明显的形状，到处形成白浪 \\
+		\hline
+		5 & 出现高大的波峰，浪花占了波峰上很大的面积，风开始削去波峰上的浪花 \\
+		\hline
+		6 & 波峰上被风削去的浪花开始沿海浪斜面伸长成带状 \\
+		\hline
+		7 & 风削去的浪花带布满了海浪斜面，有些地方到达波谷，波峰上布满了浪花层 \\
+		\hline
+		8 & 稠密的浪花布满了海浪斜面，海面变成白色，只在波谷某些地方没有浪花 \\
+		\hline
+		9 & 整个海面布满了稠密的浪花层，空气中充满了水滴和飞沫，能见度显著降低 \\
+		\hline
+	\end{tabularx}
+\end{table}
+
+\begin{table}[H]
+\centering
+\caption{气象观测记录表}
+\begin{tabularx}{\linewidth}{YYYY}
+\toprule
+项目 & {} & 项目 & {} \\
+\midrule
+{} & {} & {} & {} \\
+{} & {} & {} & {} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\noindent\textbf{填写说明：}请在 {} 中填写。\par
+
+
+\subsubsection{数据分析结论}
+\noindent\textbf{填写说明：}此处填写实验数据分析、结果解释或讨论内容。\par
+{}
+\subsection{实验八：水文、水质观测}
+
+\subsubsection{实验目的}
+掌握海水透明度、水色的定义及观测方法；掌握海水温度、盐度、溶解氧等参数的测量方法和仪器的使用。
+
+\subsubsection{实验内容}
+记录实验当天各站点的海水透明度、水色，并利用多参数水质仪测量海水温度、盐度、溶解氧等数据。
+
+\subsubsection{实验设备}
+透明度盘、长绳、水色比色计、采水器、OT-Switch 多参数水质仪。
+
+\begin{figure}[H]
+\centering
+\placeholder{此处需插入图片：透明度盘}
+\caption{透明度盘}
+
+\end{figure}
+
+\subsubsection{实验步骤}
+\begin{enumerate}[label=（\arabic*）]
+  \item 海水透明度观测：观测应在甲板的背阳处，将透明度盘垂直放入水中，沉到刚好看不见的深度，然后再慢慢地提升到透明度盘隐约可见时，读取绳索在水面的标记数值（有波浪时应分别读取绳索在波峰和波谷处的标记数值，重复三次，求其平均值）；读到一位小数，重复二到三次，取其平均值，即为观测的透明度值，计入观测记录表中。若倾角超过 \(15^\circ\)，则应进行深度订正。当绳索倾角过大时，盘下的重锤应适当加重。
+  \item 水色观测：透明度观测结束后，将透明度盘提升到透明度值一半的水层，根据透明度盘上所呈现的海水颜色，在水色计中找出与之最相似的色级号码，即为该次观测的水色，并记入观测记录表中，观测时观测者的视线需保持与水色计玻璃管垂直。
+  \item 水质观测：利用多参数水质仪对站位的温度、盐度、溶解氧（DO）、叶绿素、pH 和浊度等参数进行剖面观测。首先对多参数水质仪进行设置，因进行剖面观测，因此采样频率宜采用 5Hz 或者 25Hz，具体操作指南见附录 3。仪器设置完毕后，确保仪器正常工作，之后借助绞车等工具将多参数水质仪放至船边，保持匀速缓慢下降，从而获取站位相关参数的剖面数据。下放过程中注意避免触底，避免仪器磕碰船舷。根据剖面数据绘制剖面曲线图、大面站所测海域水质参数空间分布图等，并尝试阐述曲线产生机理。
+\end{enumerate}
+
+\subsubsection{实验数据记录}
+
+\begin{table}[H]
+\centering
+\caption{实验数据记录}
+\begin{tabularx}{\linewidth}{YYYY}
+\toprule
+项目 & {} & 项目 & {} \\
+\midrule
+{} & {} & {} & {} \\
+{} & {} & {} & {} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\noindent\textbf{填写说明：}此处保留表格格式；请在 {} 中填写。\par
+
+\begin{figure}[H]
+\centering
+\placeholder{此处需插入图片：相关实验图件占位}
+\caption{相关实验图件占位}
+
+\end{figure}
+\subsection{实验九：海洋表面光谱测量}
+
+\subsubsection{实验目的}
+掌握海洋表面光谱测量方法，熟悉高光谱辐射计测量操作和数据处理过程，理解海洋表面光谱反映的海洋水体特征，思考海洋表面光谱测量可能受哪些因素影响。
+
+\subsubsection{实验内容}
+在指定站位选择岸边、湖边、或者调查船舷处，利用光谱仪分别测量太阳向下辐照度、海水光谱辐亮度、天空光谱辐亮度，利用测量数据计算得到海洋遥感反射率（比）光谱。
+
+\subsubsection{实验设备}
+光谱仪、数据采集终端、GPS、半圆仪、长直尺、测量卷尺、记录本等。
+
+\subsubsection{实验步骤}
+\paragraph{准备工作}
+\begin{enumerate}[label=（\arabic*）]
+  \item 光谱仪电池、数据采集终端充电：光谱仪电池电量不足时红灯闪亮，充满电后绿灯亮；如果黄灯闪亮则说明过热，需要等待一段时间。
+  \item 将光谱仪、电缆、数据采集终端连接后，依次打开光谱仪电源及数据采集终端电源，并启动相应数据采集软件。
+  \item 在软件中选择设置定标文件、数据采集配置、存储路径、测量站位名称等。准备工作连接设置详细操作可参考 RAMSES 辐射计手持机用户手册。
+\end{enumerate}
+
+\paragraph{光谱测量}
+\begin{enumerate}[label=（\arabic*）,resume]
+  \item 辐照度传感器垂直向上，测量获得向下太阳辐照度 \(E_d\)。
+  \item 辐亮度镜头对准天空、水面，测量获得天空光谱辐亮度（\(L_{sky}\)）、水面光谱辐亮度（\(L_u\)）；常用测量几何如下图所示，一般选择 \(\theta_v=40^\circ\)，\(\phi_v=135^\circ\) 或 \(90^\circ\)，方法可参考文献唐军武等（2004）。
+\end{enumerate}
+
+\begin{figure}[H]
+\centering
+\placeholder{此处需插入图片：海洋表面光谱测量几何示意}
+\caption{海洋表面光谱测量几何示意}
+
+\end{figure}
+
+测量时建议每次测量至少不少于 10 个光谱曲线，数据处理筛选平均用；测量时注意检查数据保存文件夹，数据是否正确保存；测量时镜头对的区域尽量避免受到船体/岸/树等的遮蔽阴影或其他强反射体影响。测量人尽量穿着深色衣物，避免反射影响测量效果。
+
+\paragraph{数据处理}
+\begin{enumerate}[label=（\arabic*）,resume]
+  \item 描述实习实验设置方式，记录测量日期、时间、太阳--观测几何、经纬度、天气情况、海面状况，有可能的话记录风速、风向。
+  \item 画出海洋测量数据的光谱曲线，包括太阳向下辐照度 \(E_d\)、海水光谱辐亮度 \(L_u\)、天空光谱辐亮度 \(L_{sky}\)、以及计算得到的遥感反射率（比）光谱 \(R_{rs}\)。
+\end{enumerate}
+
+\subsubsection{实验数据记录与处理}
+
+\begin{table}[H]
+\centering
+\caption{实验数据记录与处理}
+\begin{tabularx}{\linewidth}{YYYY}
+\toprule
+项目 & {} & 项目 & {} \\
+\midrule
+{} & {} & {} & {} \\
+{} & {} & {} & {} \\
+\bottomrule
+\end{tabularx}
+\end{table}
+\noindent\textbf{填写说明：}此处保留表格格式；请在 {} 中填写。\par
+
+\begin{figure}[H]
+\centering
+\placeholder{此处需插入图片：相关实验图件占位}
+\caption{相关实验图件占位}
+
+\end{figure}
+\subsubsection{思考题回答}
+\begin{enumerate}[label=（\arabic*）]
+  \item 画出不同站位地图，分析不同站位海水光谱特征及其差别。
+  {}
+  \item 思考哪些因素可能会造成海水表面光谱反射率测量结果的变化，为什么？
+  {}
+  \item 思考海洋遥感中进行光谱反射率测量的意义和用途。
+  {}
+\end{enumerate}
+\section{感想、设想及建议}
+\noindent\textbf{填写说明：}此处填写个人感想、设想及建议。\par
+{}
+
+\clearpage
+\section*{附件一：海底地貌调查虚拟仿真实验报告}
+\addcontentsline{toc}{section}{附件一：海底地貌调查虚拟仿真实验报告}
+
+\subsection*{一、实验目的}
+\addcontentsline{toc}{subsection}{一、实验目的}
+
+\noindent\textbf{1.1 实验时间}\par
+{}
+
+\noindent\textbf{1.2 实验海域}\par
+{}
+
+\noindent\textbf{1.3 实验目的}\par
+{}
+
+\subsection*{二、实验船只}
+\addcontentsline{toc}{subsection}{二、实验船只}
+{}
+
+\subsection*{三、实验项目}
+\addcontentsline{toc}{subsection}{三、实验项目}
+
+\subsubsection*{3.1 侧扫声呐探测}
+\noindent\textbf{（1）实验目的}\par
+{}
+
+\noindent\textbf{（2）实验内容}\par
+{}
+
+\noindent\textbf{（3）实验设备组成}\par
+{}
+
+\noindent\textbf{（4）实验结果分析}\par
+{}
+\begin{figure}[H]
+\centering
+\placeholder{此处需插入侧扫声呐探测实验结果图片。}
+\caption{侧扫声呐探测实验结果图片占位}
+\end{figure}
+
+\subsubsection*{3.2 浅地层剖面仪探测}
+\noindent\textbf{（1）实验目的}\par
+{}
+
+\noindent\textbf{（2）实验内容}\par
+{}
+
+\noindent\textbf{（3）实验设备组成}\par
+{}
+
+\noindent\textbf{（4）实验结果分析}\par
+{}
+\begin{figure}[H]
+\centering
+\placeholder{此处需插入浅地层剖面仪探测实验结果图片。}
+\caption{浅地层剖面仪探测实验结果图片占位}
+\end{figure}
+
+\subsubsection*{3.3 多波束探测}
+\noindent\textbf{（1）实验目的}\par
+{}
+
+\noindent\textbf{（2）实验内容}\par
+{}
+
+\noindent\textbf{（3）实验设备组成}\par
+{}
+
+\noindent\textbf{（4）实验结果分析}\par
+{}
+\begin{figure}[H]
+\centering
+\placeholder{此处需插入多波束探测实验结果图片。}
+\caption{多波束探测实验结果图片占位}
+\end{figure}
+
+\subsection*{四、探究性实验报告}
+\addcontentsline{toc}{subsection}{四、探究性实验报告}
+
+\begin{enumerate}[label=\arabic*.]
+  \item 简述侧扫声呐、浅地层剖面仪、多波束测深系统在作业方式、作业原理等方面的共性与特性。
+  {}
+  \item 查阅相关文献资料，根据实验结果分析所调查海域的地貌形态及该地貌发育演化的控制因素。
+  {}
+  \item 里斯本丸号是二战期间日军运输船。你是第一次听说“里斯本丸”号沉船，仅在资料和民间传说中听到沉船的大概位置。为研究“里斯本丸”事件，请设计一个综合海洋考古航次，结合学到的海洋调查方法和仪器，寻找“里斯本丸”号沉船。
+  {}
+\end{enumerate}
+
+\clearpage
+\section*{附件二：海洋牧场低氧灾害调查监测虚拟仿真实验报告}
+\addcontentsline{toc}{section}{附件二：海洋牧场低氧灾害调查监测虚拟仿真实验报告}
+
+\subsection*{一、实验基本信息}
+\addcontentsline{toc}{subsection}{一、实验基本信息}
+
+\noindent\textbf{1.1 实验时间}\par
+{}
+
+\noindent\textbf{1.2 实验平台}\par
+{}
+
+\noindent\textbf{1.3 实验目的}\par
+{}
+
+\subsection*{二、实验内容}
+\addcontentsline{toc}{subsection}{二、实验内容}
+
+\noindent\textbf{2.1 知识学习模块}\par
+{}
+
+\noindent\textbf{2.2 设备展示模块}\par
+{}
+
+\noindent\textbf{2.3 设备布放模块}\par
+{}
+
+\subsection*{三、实验过程与结果}
+\addcontentsline{toc}{subsection}{三、实验过程与结果}
+
+\noindent\textbf{3.1 实验操作过程}\par
+{}
+
+\noindent\textbf{3.2 实验完成情况}\par
+{}
+
+\noindent\textbf{3.3 实验结果说明}\par
+{}
+
+\subsection*{四、思考问答题}
+\addcontentsline{toc}{subsection}{四、思考问答题}
+
+\begin{enumerate}[label=\arabic*.]
+  \item 海洋牧场概念是什么？
+  {}
+  \item 海洋牧场可以利用海底有缆在线监测系统进行信息化智慧监测，说明该监测系统组成及其可实现的监测参数，思考该系统的优缺点。
+  {}
+  \item 海洋牧场海底有缆在线监测系统的布放过程主要有哪些操作内容？布放完成后如何保障系统长期正常工作？
+  {}
+  \item 对海洋牧场低氧灾害调查监测虚拟仿真实验的意见和建议。
+  {}
+\end{enumerate}
+
+\subsection*{五、实验截图}
+\addcontentsline{toc}{subsection}{五、实验截图}
+
+\begin{figure}[H]
+\centering
+\placeholder{此处需插入海洋牧场低氧灾害调查监测虚拟仿真实验过程截图。}
+\caption{海洋牧场低氧灾害调查监测虚拟仿真实验过程截图占位}
+\end{figure}
+\FloatBarrier
+
+\end{document}
